@@ -1,7 +1,5 @@
-from tkinter import Tk
-from tkinter import StringVar,Entry,Button
-from math import pi,e,sin,cos,tan,log,log10,ceil,degrees,radians,exp,asin,acos,floor
-
+from tkinter import Tk,StringVar,Entry,Button
+from math import degrees,radians,exp,asin,acos,floor,pi,e,sin,cos,tan,log,log10,ceil
 
 class calculator:
     def __init__(self):
@@ -11,6 +9,6 @@ class calculator:
         self.string=StringVar()
 
         entry=Entry(window,textvariable=self.string)
-        entry.grid(row=0,column=1,columnspan=6)
+        entry.grid(row=0,column=0,columnspan=8)
         entry.configure(background="white")
         entry.focus()
